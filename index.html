@@ -3,13 +3,27 @@
     <meta charset="UTF-8">
     <title>❤️ My Life ❤️</title>
     <link rel="stylesheet" href="stylesheet/style.css">
-    <style>
+     <style>
               body {
         background-image: url("valentine.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         
     }
+    img{
+        animation-name: animate;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes animate{
+        0%{
+            clip-path: circle(0% at 50% 50%); 
+        }
+        100%{
+            clip-path: circle(100% at 50% 50%);
+        }
+    }
+
     </style>
 </head>
 <body>
