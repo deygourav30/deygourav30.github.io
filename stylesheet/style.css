@@ -1,5 +1,6 @@
 body {
     background-color: #EAF6F6;
+    animation: animate 3s linear infinite;
 }
 hr {
     border-style: none;
@@ -7,6 +8,14 @@ hr {
     border-width: 5px;
     border-color: black;
     width: 5%;
+}
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
 h1 {
     color: #7B2869; font-size: 50px;
@@ -22,5 +31,5 @@ h3 {
 img {
     background-color: none;
     animation-name: fadeInOut;
-    animation-duration: 3s;
+    animation-duration: 10s;
 }
